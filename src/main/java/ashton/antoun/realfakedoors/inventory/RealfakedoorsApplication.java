@@ -1,9 +1,7 @@
-package ashton.antoun.realfakedoors;
+package ashton.antoun.realfakedoors.inventory;
 
-import ashton.antoun.realfakedoors.api.ItemController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 public class RealfakedoorsApplication {

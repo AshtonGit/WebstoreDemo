@@ -1,7 +1,7 @@
-package ashton.antoun.realfakedoors.api;
+package ashton.antoun.realfakedoors.inventory.api;
 
-import ashton.antoun.realfakedoors.model.Item;
-import ashton.antoun.realfakedoors.service.ItemService;
+import ashton.antoun.realfakedoors.inventory.model.Item;
+import ashton.antoun.realfakedoors.inventory.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,8 +19,8 @@ public class ItemController {
     }
 
     @PostMapping
-    public void addItem(@RequestBody Item item){
-        itemservice.addItem(item);
+    public Item addItem(@RequestBody Item item){
+       return itemservice.addItem(item);
     }
 
     @GetMapping
