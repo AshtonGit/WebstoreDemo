@@ -25,7 +25,8 @@ public class ItemController {
 
     @GetMapping
     public List<Item> getAllItems(Item item){
-        return this.itemservice.selectAllItems();
+        List<Item> items = this.itemservice.selectAllItems();
+        return items;
     }
 
 

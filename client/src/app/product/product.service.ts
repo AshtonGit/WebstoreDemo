@@ -13,4 +13,21 @@ export class ProductService {
   getProducts(){    
     return this.http.get<Product[]>(this.databaseUrl);
   }
+
+  getTestProducts(){
+    return [
+        {
+          "name": "Banana",
+          "img": "/api/v1/image/1",
+          "id":0,
+          "price":2
+        },
+        {
+          "name": "Orange",
+          "img": "/api/v1/image/3",
+          "id":0,
+          "price":2
+        }
+    ]
+  }
 }

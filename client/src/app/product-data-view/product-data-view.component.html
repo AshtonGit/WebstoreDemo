@@ -1,0 +1,16 @@
+
+<mat-grid-list  cols="4" rowHeight = "300px" gutterSize="5px">
+    <mat-grid-tile [colspan] = "1" [rowspan]="1"  *ngFor = "let item of page">
+        <mat-card object-fit:cover width:50% height:50%>
+            
+            <img mat-card-image class="mat-card"   src={{item.image}}>
+            <mat-card-footer>
+                <div><span class="card-name-text">{{item.name}}</span></div>
+                <div><span class="card-price-text">{{item.price}}</span></div>       
+            </mat-card-footer>
+        </mat-card>   
+    </mat-grid-tile>   
+</mat-grid-list>
+<mat-paginator [pageSize]="pagesize" [length] = "length" (page) = "page = onPageChange($event)">
+    
+</mat-paginator>

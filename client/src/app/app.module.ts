@@ -1,17 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { ProductComponent } from './product/product.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MaterialModule } from './material.module' 
+import { ProductDataViewComponent } from './product-data-view/product-data-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
+    ProductDataViewComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
