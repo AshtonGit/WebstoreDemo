@@ -22,4 +22,6 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
   }
 
-  .mat-card { display:inline-block; max-width:200px; min-width:100px; max-height: 250px; margin:0 10px; }
+  .mat-card-image{
+    width: 80%;    
+  }

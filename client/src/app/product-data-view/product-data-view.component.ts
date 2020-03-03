@@ -32,7 +32,7 @@ export class ProductDataViewComponent implements OnInit {
   
   ngOnInit(): void {
     this.index=0;
-    this.pagesize = 5;
+    this.pagesize = 8;
   
     this.productService.getProducts().subscribe(
       (data)=>{
