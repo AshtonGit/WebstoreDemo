@@ -33,6 +33,7 @@ build/
 .DS_STORE
 
 /dist/
+database/target
 /bazel-out
 /integration/bazel/bazel-*
 *.log

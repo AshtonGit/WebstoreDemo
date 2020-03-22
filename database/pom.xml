@@ -6,12 +6,12 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.4.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>ashton.antoun</groupId>
-	<artifactId>realfakedoors</artifactId>
+	<artifactId>webstoredatabase</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>realfakedoors</name>
+	<name>WebstoreDatabase</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -54,11 +54,6 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<version>1.4.199</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
